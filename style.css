@@ -1,0 +1,238 @@
+a {
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    background-color: bisque;
+    -webkit-user-select: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orangered;
+    cursor: pointer;
+}
+li a {
+    color: red;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    font-size: large;
+    text-transform: capitalize;
+}
+li a:hover {
+    transform: scale(1.1);
+    background-color: red;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: #000;
+    padding: 3px;
+}
+main {
+    margin-top: 25px;
+}
+.main-photo {
+    background-image: url("https://img.uswitch.com/n36b8lzdmgnp/6flMYPMjJ0sZzNs16Fsqa/c525a3f838b0e62716631f003390506b/shutterstock_1736005427212121212.jpg?auto=format%2Ccompress&q=35&ixlib=react-9.5.1-beta.1&w=1476");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 10px 10px 80px orangered ;
+}
+.welcome {
+    position: absolute;
+    font-size: x-large;
+    color: rgb(57, 49, 44);
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgba(255, 253, 253, 0.7);
+    font-weight: 800;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+    transform-style: preserve-3d ;
+    position: relative;
+}
+.div1 {
+    background-image:url("https://www.elaosboa.com/wp-content/uploads/2023/08/elaosboa10426-2048x1541.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.div1::after {
+    position: absolute;
+    z-index: 5;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color:black ;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.div1:hover::after {
+    width: 25%;
+    height: 100%;
+    opacity: .7;
+}
+.div1::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color:black ;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.div1:hover::before {
+    width: 25%;
+    height: 100%;
+    opacity: .7;
+}
+.div2 {
+    position: absolute;
+    background-color: antiquewhite;
+    color: orangered;
+    width: 140px;
+    height: 50px;
+    left: 50%;
+    bottom: 0%;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    cursor: pointer;
+    z-index: 1;
+    opacity: .1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div2:hover {
+    opacity: .9;
+}
+footer {
+    background-color: rgb(236, 124, 20);
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+.div6 {
+    background-image: url("https://img.uswitch.com/n36b8lzdmgnp/5O4RhSu2StPWOEz5yR0Tfv/6277ef4b95e2d2c4cd698b334a293e04/Screenshot_2022-03-22_at_12.43.33.png?auto=format%2Ccompress&q=35&ixlib=react-9.5.1-beta.1&w=1476");
+}
+.div7 {
+    background-image: url(https://img.uswitch.com/n36b8lzdmgnp/1VOqnXioEZ69uZQPT5XxXw/c58adfe96cf47c45b6ef6db36c565768/google-pixel-6__1_.jpeg?auto=format%2Ccompress&q=35&ixlib=react-9.5.1-beta.1&w=1476);
+}
+.div8 {
+    background-image: url("https://img.uswitch.com/n36b8lzdmgnp/2q4G48eu63lGsYYL7I0G2V/8b3b17dc6d3e8dbcf54869fc27fc54e8/Apple_2048_005_Uswitch_2103220052.jpg?auto=format%2Ccompress&q=35&ixlib=react-9.5.1-beta.1&w=1476");
+}
+.div9 {
+    background-image: url("https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/750x500/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23759759/bfarsace_190101_5333_0006.jpg");
+}
+.div10 {
+    background-image: url("https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1080x720/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23759761/bfarsace_190101_5333_0008.jpg");
+}
+.div11 {
+    background-image: url("https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1080x720/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24371439/236492_MacBook_Pro_16__2023__AKrales_0247.jpg");
+}
+.div12 {
+    background-image: url("https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/1080x720/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/23448166/mchin_200731_5205_0004.jpg");
+}
+h3:hover {
+    background-color: rgb(29, 24, 24);
+    padding: 4px;
+    transition: .5s;
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+@media (max-width : 900px) {
+    section {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width : 670px) {
+    section {
+        grid-template-columns: repeat(1,1fr);
+    }
+    header {
+        display: block;
+    }
+    .logo {
+        text-align: center;
+    }
+    ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
